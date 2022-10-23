@@ -152,7 +152,6 @@ function PlasmicForm__RenderFunc(props: {
         name={"message" as const}
         placeholder={"Tell me what you are looking for" as const}
         required={true}
-        value={"" as const}
       />
 
       <input

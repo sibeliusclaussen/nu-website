@@ -300,9 +300,8 @@ function PlasmicBlog__RenderFunc(props: {
                         sty.link__f5G7Q
                       )}
                       component={Link}
-                      href={"https://natalieunterstell.com/blog/" as const}
+                      href={`/blog`}
                       platform={"nextjs"}
-                      target={"_blank" as const}
                     >
                       <Button
                         active={true}
@@ -720,7 +719,6 @@ function PlasmicBlog__RenderFunc(props: {
                     component={Link}
                     href={`/blog`}
                     platform={"nextjs"}
-                    target={"_blank" as const}
                   >
                     <Button
                       active={true}

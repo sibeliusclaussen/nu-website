@@ -296,9 +296,8 @@ function PlasmicAbout__RenderFunc(props: {
                         sty.link__w2L1K
                       )}
                       component={Link}
-                      href={"https://natalieunterstell.com/blog/" as const}
+                      href={`/blog`}
                       platform={"nextjs"}
-                      target={"_blank" as const}
                     >
                       <Button
                         className={classNames(
@@ -751,7 +750,6 @@ function PlasmicAbout__RenderFunc(props: {
                     component={Link}
                     href={`/blog`}
                     platform={"nextjs"}
-                    target={"_blank" as const}
                   >
                     <Button
                       className={classNames("__wab_instance", sty.button__uBpx)}
