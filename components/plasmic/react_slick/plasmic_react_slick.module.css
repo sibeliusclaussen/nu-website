@@ -511,7 +511,7 @@
 :where(.root_reset .code),
 :where(.root_reset :global(.__wab_expr_html_text) code),
 :where(.root_reset.plasmic_default__code) {
-  background: var(--mixin-c8UumBO5rQx_background);
+  background: #f8f8f8;
   font-family: var(--mixin-c8UumBO5rQx_font-family);
   border-radius: var(--mixin-c8UumBO5rQx_border-top-left-radius)
     var(--mixin-c8UumBO5rQx_border-top-right-radius)
@@ -580,7 +580,7 @@
 :where(.root_reset .pre),
 :where(.root_reset :global(.__wab_expr_html_text) pre),
 :where(.root_reset.plasmic_default__pre) {
-  background: var(--mixin--duH73MG2Nc_background);
+  background: #f8f8f8;
   font-family: var(--mixin--duH73MG2Nc_font-family);
   border-radius: var(--mixin--duH73MG2Nc_border-top-left-radius)
     var(--mixin--duH73MG2Nc_border-top-right-radius)

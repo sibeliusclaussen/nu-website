@@ -95,6 +95,8 @@ function PlasmicBlog__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_0Uf6PR80TuUp8()
   });
@@ -374,7 +376,7 @@ function PlasmicBlog__RenderFunc(props: {
                     ) : null}
                     {true ? (
                       <_Icon
-                        className={classNames(projectcss.all, sty.svg___5EDyb)}
+                        className={classNames(projectcss.all, sty.svg__pBiNz)}
                         role={"img"}
                       />
                     ) : null}
@@ -400,7 +402,7 @@ function PlasmicBlog__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__cwf8Z
+                        sty.text__xg4Lf
                       )}
                     >
                       {"No matching published entries found."}
@@ -418,7 +420,7 @@ function PlasmicBlog__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__mXul
+                        sty.text___1GZpu
                       )}
                     >
                       {"Loading..."}
@@ -786,7 +788,7 @@ function PlasmicBlog__RenderFunc(props: {
                   />
 
                   <_Icon
-                    className={classNames(projectcss.all, sty.svg___5EDyb)}
+                    className={classNames(projectcss.all, sty.svg__xmPv)}
                     role={"img"}
                   />
                 </React.Fragment>

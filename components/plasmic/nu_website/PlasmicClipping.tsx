@@ -95,6 +95,8 @@ function PlasmicClipping__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_0Uf6PR80TuUp8()
   });
@@ -374,7 +376,7 @@ function PlasmicClipping__RenderFunc(props: {
                     ) : null}
                     {true ? (
                       <_Icon
-                        className={classNames(projectcss.all, sty.svg___5EDyb)}
+                        className={classNames(projectcss.all, sty.svg___6Ty32)}
                         role={"img"}
                       />
                     ) : null}
@@ -400,7 +402,7 @@ function PlasmicClipping__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__guOne
+                        sty.text__hvAjh
                       )}
                     >
                       {"No matching published entries found."}
@@ -418,7 +420,7 @@ function PlasmicClipping__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__frDLx
+                        sty.text___1Tk
                       )}
                     >
                       {"Loading..."}
@@ -762,7 +764,7 @@ function PlasmicClipping__RenderFunc(props: {
                   />
 
                   <_Icon
-                    className={classNames(projectcss.all, sty.svg___5EDyb)}
+                    className={classNames(projectcss.all, sty.svg__pVuS)}
                     role={"img"}
                   />
                 </React.Fragment>

@@ -92,6 +92,8 @@ function PlasmicContact__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_0Uf6PR80TuUp8()
   });
@@ -371,7 +373,7 @@ function PlasmicContact__RenderFunc(props: {
                     ) : null}
                     {true ? (
                       <_Icon
-                        className={classNames(projectcss.all, sty.svg___5EDyb)}
+                        className={classNames(projectcss.all, sty.svg__srWDk)}
                         role={"img"}
                       />
                     ) : null}
@@ -661,7 +663,7 @@ function PlasmicContact__RenderFunc(props: {
                   />
 
                   <_Icon
-                    className={classNames(projectcss.all, sty.svg___5EDyb)}
+                    className={classNames(projectcss.all, sty.svg__a1EnO)}
                     role={"img"}
                   />
                 </React.Fragment>

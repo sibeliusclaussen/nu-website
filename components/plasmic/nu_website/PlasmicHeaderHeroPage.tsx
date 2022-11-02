@@ -98,6 +98,8 @@ function PlasmicHeaderHeroPage__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_0Uf6PR80TuUp8()
   });
@@ -329,7 +331,7 @@ function PlasmicHeaderHeroPage__RenderFunc(props: {
                     />
 
                     <_Icon
-                      className={classNames(projectcss.all, sty.svg___5EDyb)}
+                      className={classNames(projectcss.all, sty.svg__a4Vu)}
                       role={"img"}
                     />
                   </React.Fragment>

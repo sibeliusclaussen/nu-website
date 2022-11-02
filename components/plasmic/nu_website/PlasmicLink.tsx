@@ -83,6 +83,8 @@ function PlasmicLink__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
   return (
     <div
       data-plasmic-name={"root"}

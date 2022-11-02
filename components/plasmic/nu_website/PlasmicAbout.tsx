@@ -90,6 +90,8 @@ function PlasmicAbout__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_0Uf6PR80TuUp8()
   });
@@ -369,7 +371,7 @@ function PlasmicAbout__RenderFunc(props: {
                     ) : null}
                     {true ? (
                       <_Icon
-                        className={classNames(projectcss.all, sty.svg___5EDyb)}
+                        className={classNames(projectcss.all, sty.svg__sq4Lr)}
                         role={"img"}
                       />
                     ) : null}
@@ -816,7 +818,7 @@ function PlasmicAbout__RenderFunc(props: {
                   />
 
                   <_Icon
-                    className={classNames(projectcss.all, sty.svg___5EDyb)}
+                    className={classNames(projectcss.all, sty.svg__yArAp)}
                     role={"img"}
                   />
                 </React.Fragment>

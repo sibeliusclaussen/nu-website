@@ -83,6 +83,8 @@ function PlasmicForm__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
   return (
     <p.Stack
       as={"form"}
@@ -163,7 +165,7 @@ function PlasmicForm__RenderFunc(props: {
         disabled={false}
         name={"redirect" as const}
         type={"hidden" as const}
-        value={"https://natalieunterstell.plasmic.site/contact" as const}
+        value={"https://natalieunterstell.com.br/contact" as const}
       />
 
       <Button

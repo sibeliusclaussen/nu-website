@@ -90,6 +90,8 @@ function PlasmicSectionTitle__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
   return (
     <div
       data-plasmic-name={"root"}

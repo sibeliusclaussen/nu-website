@@ -84,6 +84,8 @@ function PlasmicHeader__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -224,7 +226,7 @@ function PlasmicHeader__RenderFunc(props: {
                 ) : null}
                 {true ? (
                   <_Icon
-                    className={classNames(projectcss.all, sty.svg___5EDyb)}
+                    className={classNames(projectcss.all, sty.svg___26P7)}
                     role={"img"}
                   />
                 ) : null}
