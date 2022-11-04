@@ -40,6 +40,7 @@ import Header from "../../Header"; // plasmic-import: A6pZz1HLj4/component
 import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import SectionTitle from "../../SectionTitle"; // plasmic-import: A5YKWg0MH2/component
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import Footer from "../../Footer"; // plasmic-import: oAWDpYdN0s/component
 
 import { useScreenVariants as useScreenVariants_0Uf6PR80TuUp8 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 0UF6pR80tuUP8/globalVariant
@@ -53,26 +54,40 @@ import NatalieUnterstellLogoIcon from "./icons/PlasmicIcon__NatalieUnterstellLog
 import _Icon from "./icons/PlasmicIcon___"; // plasmic-import: 6Vrd0S0dtKQ/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: iemRUT8B78Y/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: tfqLjeUE7Y3/icon
+import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: XVD3DQgHwQ_/icon
+import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: s6SBstulsIq/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: GPUNnXp_ix/icon
 
 export type PlasmicHome__VariantMembers = {};
 export type PlasmicHome__VariantsArgs = {};
 type VariantPropType = keyof PlasmicHome__VariantsArgs;
 export const PlasmicHome__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicHome__ArgsType = {};
+export type PlasmicHome__ArgsType = {
+  category?: React.ReactNode;
+  category2?: React.ReactNode;
+  category4?: React.ReactNode;
+};
 type ArgPropType = keyof PlasmicHome__ArgsType;
-export const PlasmicHome__ArgProps = new Array<ArgPropType>();
+export const PlasmicHome__ArgProps = new Array<ArgPropType>(
+  "category",
+  "category2",
+  "category4"
+);
 
 export type PlasmicHome__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
-  h1?: p.Flex<"h1">;
   slider?: p.Flex<typeof Slider>;
   reveal?: p.Flex<typeof Reveal>;
-  p?: p.Flex<"p">;
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati?: p.Flex<"p">;
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati3?: p.Flex<"p">;
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati2?: p.Flex<"p">;
+  category?: p.Flex<"div">;
+  category2?: p.Flex<"div">;
+  category4?: p.Flex<"div">;
+  h3?: p.Flex<"h3">;
+  embedHtml?: p.Flex<typeof Embed>;
   footer?: p.Flex<typeof Footer>;
 };
 
@@ -258,6 +273,37 @@ function PlasmicHome__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
+                        sty.link__kJKfl
+                      )}
+                      component={Link}
+                      href={`/timeline`}
+                      platform={"nextjs"}
+                    >
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button___0VUkG
+                        )}
+                        color={"clear" as const}
+                        shape={"sharp" as const}
+                        size={"minimal" as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__l600O
+                          )}
+                        >
+                          {"Timeline"}
+                        </div>
+                      </Button>
+                    </p.PlasmicLink>
+
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
                         sty.link__huuVe
                       )}
                       component={Link}
@@ -292,7 +338,7 @@ function PlasmicHome__RenderFunc(props: {
                         sty.link__bu8Ph
                       )}
                       component={Link}
-                      href={`/blog`}
+                      href={`/articles`}
                       platform={"nextjs"}
                     >
                       <Button
@@ -400,13 +446,11 @@ function PlasmicHome__RenderFunc(props: {
                       className={classNames(projectcss.all, sty.column__a5StV)}
                     >
                       <h1
-                        data-plasmic-name={"h1"}
-                        data-plasmic-override={overrides.h1}
                         className={classNames(
                           projectcss.all,
                           projectcss.h1,
                           projectcss.__wab_text,
-                          sty.h1
+                          sty.h1__ml9N0
                         )}
                       >
                         <React.Fragment>
@@ -440,12 +484,13 @@ function PlasmicHome__RenderFunc(props: {
                             role={"img"}
                           />
                         }
+                        link={`/about`}
                         onClick={"" as const}
                         outline={true}
                         shape={"sharp" as const}
                         size={"compact" as const}
                       >
-                        {"Know More"}
+                        {"Learn More"}
                       </Button>
                     </p.Stack>
 
@@ -548,13 +593,11 @@ function PlasmicHome__RenderFunc(props: {
                     />
 
                     <p
-                      data-plasmic-name={"p"}
-                      data-plasmic-override={overrides.p}
                       className={classNames(
                         projectcss.all,
                         projectcss.p,
                         projectcss.__wab_text,
-                        sty.p
+                        sty.p__pKiG6
                       )}
                     >
                       {
@@ -576,9 +619,9 @@ function PlasmicHome__RenderFunc(props: {
                     displayWidth={"auto" as const}
                     loading={"lazy" as const}
                     src={{
-                      src: "/plasmic/nu_website/images/nuImageNatalieUnterstell.png",
-                      fullWidth: 460,
-                      fullHeight: 542,
+                      src: "/plasmic/nu_website/images/unatalieFirstImageResizedpng.png",
+                      fullWidth: 1024,
+                      fullHeight: 1535,
                       aspectRatio: undefined
                     }}
                   />
@@ -719,11 +762,29 @@ function PlasmicHome__RenderFunc(props: {
             ) : null}
           </p.Stack>
 
-          <p.Stack
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__kLxNo)}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__kLxNo)}>
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__yU6Tr)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"none" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? ("120%" as const)
+                  : ("auto" as const)
+              }
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/nu_website/images/unatalieOpenArmsRemovedBg1Png.png",
+                fullWidth: 1209,
+                fullHeight: 442,
+                aspectRatio: undefined
+              }}
+            />
+
             <div className={classNames(projectcss.all, sty.columns__xhGkc)}>
               <p.Stack
                 as={"div"}
@@ -782,19 +843,462 @@ function PlasmicHome__RenderFunc(props: {
                     "Natalie wants to solve the climate crisis in one generation, ours. She is a speaker, negotiator and entrepreneur for the environment that gets involved in several national and international initiatives, with a focus on public management. "
                   }
                 </p>
+
+                <Button
+                  buttonType={"" as const}
+                  className={classNames("__wab_instance", sty.button___6URn9)}
+                  color={"white" as const}
+                  endIcon={
+                    <Icon2Icon
+                      className={classNames(projectcss.all, sty.svg__no6)}
+                      role={"img"}
+                    />
+                  }
+                  link={`/about`}
+                  onClick={"" as const}
+                  outline={true}
+                  shape={"sharp" as const}
+                  size={"compact" as const}
+                >
+                  {"Learn More"}
+                </Button>
+              </p.Stack>
+            </div>
+          </div>
+
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__hZq8A)}
+          >
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__ckBr1)}
+            >
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__s3XM)}
+              >
+                <SectionTitle
+                  className={classNames(
+                    "__wab_instance",
+                    sty.sectionTitle___69BmS
+                  )}
+                  slot={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__nq5G1
+                      )}
+                    >
+                      {"Factsheet"}
+                    </div>
+                  }
+                  slot2={
+                    (
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? true
+                        : true
+                    ) ? (
+                      <_Icon
+                        className={classNames(projectcss.all, sty.svg__bQxe9)}
+                        role={"img"}
+                      />
+                    ) : null
+                  }
+                  unnamedVariant={true}
+                >
+                  {"Factsheet"}
+                </SectionTitle>
+
+                <p
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.p,
+                    projectcss.__wab_text,
+                    sty.p__rv48B
+                  )}
+                >
+                  {
+                    "Sustainability seeks the rational use of natural resources without compromising the environment so that the current generation can develop and there is an opportunity for future generations."
+                  }
+                </p>
               </p.Stack>
 
-              {(
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? false
-                  : true
-              ) ? (
-                <div
-                  className={classNames(projectcss.all, sty.column__y8Yto)}
-                />
-              ) : null}
-            </div>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__vm4P)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__x7KyY)}
+                >
+                  {true ? (
+                    <div
+                      data-plasmic-name={"category"}
+                      data-plasmic-override={overrides.category}
+                      className={classNames(projectcss.all, sty.category)}
+                    >
+                      {p.renderPlasmicSlot({
+                        defaultContents: "Deforestation",
+                        value: args.category,
+                        className: classNames(sty.slotTargetCategory)
+                      })}
+                    </div>
+                  ) : null}
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__ac3Ni)}
+                  >
+                    <h4
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h4,
+                        projectcss.__wab_text,
+                        sty.h4__aFidO
+                      )}
+                    >
+                      {
+                        "Brazil lost 189 hectares of native vegetation every hour in 2021"
+                      }
+                    </h4>
+
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.__wab_text,
+                        sty.p__ytrKx
+                      )}
+                    >
+                      {
+                        "In the Amazon Rainforest, the rate equals about 18 trees felled per second."
+                      }
+                    </p>
+                  </p.Stack>
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__nOVpx)}
+                  >
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__gAaP
+                      )}
+                      component={Link}
+                      href={
+                        "https://s3.amazonaws.com/alerta.mapbiomas.org/rad2021/RAD2021_Completo_FINAL_Rev1.pdf" as const
+                      }
+                      platform={"nextjs"}
+                    >
+                      {"Map Biomas Report >"}
+                    </p.PlasmicLink>
+                  </p.Stack>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__ylT6P)}
+                >
+                  {true ? (
+                    <div
+                      data-plasmic-name={"category2"}
+                      data-plasmic-override={overrides.category2}
+                      className={classNames(projectcss.all, sty.category2)}
+                    >
+                      {p.renderPlasmicSlot({
+                        defaultContents: "Global Warming",
+                        value: args.category2,
+                        className: classNames(sty.slotTargetCategory2)
+                      })}
+                    </div>
+                  ) : null}
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__ewClg)}
+                  >
+                    <h4
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h4,
+                        projectcss.__wab_text,
+                        sty.h4__u5C00
+                      )}
+                    >
+                      {
+                        "Global warming will likely reach 1.5°C between 2030 and 2052"
+                      }
+                    </h4>
+
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.__wab_text,
+                        sty.p__dQOda
+                      )}
+                    >
+                      {"leading the planet to the edge of catastrophe."}
+                    </p>
+                  </p.Stack>
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__mOu6X)}
+                  >
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__efcZ
+                      )}
+                      component={Link}
+                      href={
+                        "https://www.ipcc.ch/sr15/resources/headline-statements/" as const
+                      }
+                      platform={"nextjs"}
+                    >
+                      {"2IPCC Report >"}
+                    </p.PlasmicLink>
+                  </p.Stack>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__rSh9S)}
+                >
+                  {true ? (
+                    <div
+                      data-plasmic-name={"category4"}
+                      data-plasmic-override={overrides.category4}
+                      className={classNames(projectcss.all, sty.category4)}
+                    >
+                      {p.renderPlasmicSlot({
+                        defaultContents: "Carbon",
+                        value: args.category4,
+                        className: classNames(sty.slotTargetCategory4)
+                      })}
+                    </div>
+                  ) : null}
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__en7Mh)}
+                  >
+                    <h4
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h4,
+                        projectcss.__wab_text,
+                        sty.h4__lr63W
+                      )}
+                    >
+                      {"Brazil produces over 400 kilotons of carbon annually"}
+                    </h4>
+
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.__wab_text,
+                        sty.p___8LVzt
+                      )}
+                    >
+                      {"and is among the 10 most prominent in the world."}
+                    </p>
+                  </p.Stack>
+
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__xjZ3T)}
+                  >
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__vKvUn
+                      )}
+                      component={Link}
+                      href={
+                        "https://data.worldbank.org/indicator/EN.ATM.CO2E.KT?locations=BR" as const
+                      }
+                      platform={"nextjs"}
+                    >
+                      {"3Data world bank >"}
+                    </p.PlasmicLink>
+                  </p.Stack>
+                </p.Stack>
+              </p.Stack>
+            </p.Stack>
           </p.Stack>
+
+          <div className={classNames(projectcss.all, sty.freeBox___1O7N)}>
+            <div className={classNames(projectcss.all, sty.freeBox__yqS4)}>
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__wFyM3)}
+              >
+                {true ? (
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox___1YKpU)}
+                  >
+                    <SectionTitle
+                      className={classNames(
+                        "__wab_instance",
+                        sty.sectionTitle__qXmm4
+                      )}
+                      slot={
+                        <h1
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h1,
+                            projectcss.__wab_text,
+                            sty.h1___0WeG
+                          )}
+                        >
+                          {"Get updated about her initiatives "}
+                        </h1>
+                      }
+                      slot2={null}
+                    >
+                      <h3
+                        data-plasmic-name={"h3"}
+                        data-plasmic-override={overrides.h3}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h3,
+                          projectcss.__wab_text,
+                          sty.h3
+                        )}
+                      >
+                        {"Follow Natalie"}
+                      </h3>
+                    </SectionTitle>
+
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___74WJs
+                      )}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__jwpQj
+                        )}
+                      >
+                        <p.PlasmicLink
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            sty.link__tgM0
+                          )}
+                          component={Link}
+                          href={
+                            "https://br.linkedin.com/in/unterstellnatalie?original_referer=https%3A%2F%2Fwww.google.com%2F" as const
+                          }
+                          platform={"nextjs"}
+                          target={"_blank" as const}
+                        >
+                          <Icon28Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__uh8CD
+                            )}
+                            role={"img"}
+                          />
+                        </p.PlasmicLink>
+
+                        <p.PlasmicLink
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            sty.link__s2YbS
+                          )}
+                          component={Link}
+                          href={
+                            "https://twitter.com/unatalie?s=20&t=lOdurbUrmxEQNjIY53wFwA" as const
+                          }
+                          platform={"nextjs"}
+                          target={"_blank" as const}
+                        >
+                          <Icon3Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___4WlkW
+                            )}
+                            role={"img"}
+                          />
+                        </p.PlasmicLink>
+
+                        <p.PlasmicLink
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            sty.link___4Lg7T
+                          )}
+                          component={Link}
+                          href={"https://www.instagram.com/unatalie/" as const}
+                          platform={"nextjs"}
+                          target={"_blank" as const}
+                        >
+                          <IconIcon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__xmUm2
+                            )}
+                            role={"img"}
+                          />
+                        </p.PlasmicLink>
+                      </p.Stack>
+                    </p.Stack>
+                  </p.Stack>
+                ) : null}
+              </p.Stack>
+
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__chebO)}
+              >
+                <Embed
+                  data-plasmic-name={"embedHtml"}
+                  data-plasmic-override={overrides.embedHtml}
+                  className={classNames("__wab_instance", sty.embedHtml)}
+                  code={
+                    '<a class="twitter-timeline" href="https://twitter.com/unatalie?ref_src=twsrc%5Etfw">Tweets by unatalie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>' as const
+                  }
+                />
+              </p.Stack>
+            </div>
+          </div>
 
           <Footer
             data-plasmic-name={"footer"}
@@ -807,23 +1311,23 @@ function PlasmicHome__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
-                    sty.link__vO04V
+                    sty.link__svUt6
                   )}
                   component={Link}
                   href={`/`}
                   platform={"nextjs"}
                 >
                   <NatalieUnterstellLogoIcon
-                    className={classNames(projectcss.all, sty.svg__wok1O)}
+                    className={classNames(projectcss.all, sty.svg___8Lm1)}
                     role={"img"}
                   />
                 </p.PlasmicLink>
               }
-              className={classNames("__wab_instance", sty.navigationBar__xgntd)}
+              className={classNames("__wab_instance", sty.navigationBar___9UzK)}
               closeButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__bzE0L)}
+                  className={classNames(sty.img__nH1Ax)}
                   displayHeight={"auto" as const}
                   displayMaxHeight={"none" as const}
                   displayMaxWidth={"none" as const}
@@ -839,13 +1343,13 @@ function PlasmicHome__RenderFunc(props: {
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__kAwtc)}
+                  className={classNames(projectcss.all, sty.freeBox__unTkV)}
                 >
                   <p.PlasmicLink
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__uMjr3
+                      sty.link___6De0Y
                     )}
                     component={Link}
                     href={`/`}
@@ -855,7 +1359,7 @@ function PlasmicHome__RenderFunc(props: {
                       active={true}
                       className={classNames(
                         "__wab_instance",
-                        sty.button___0GhF
+                        sty.button__l7KRi
                       )}
                       color={"clear" as const}
                       shape={"sharp" as const}
@@ -869,7 +1373,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link___5IQ2R
+                      sty.link__qhdhL
                     )}
                     component={Link}
                     href={`/about`}
@@ -878,7 +1382,7 @@ function PlasmicHome__RenderFunc(props: {
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button__rPcf2
+                        sty.button__gf1QN
                       )}
                       color={"clear" as const}
                       shape={"sharp" as const}
@@ -888,7 +1392,7 @@ function PlasmicHome__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__yLvU7
+                          sty.text__tokNo
                         )}
                       >
                         {"About"}
@@ -900,16 +1404,16 @@ function PlasmicHome__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__ymVj0
+                      sty.link__sviIt
                     )}
                     component={Link}
-                    href={`/clipping`}
+                    href={`/timeline`}
                     platform={"nextjs"}
                   >
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button__fqvq7
+                        sty.button___7D6Ll
                       )}
                       color={"clear" as const}
                       shape={"sharp" as const}
@@ -919,7 +1423,38 @@ function PlasmicHome__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text___2Ouyy
+                          sty.text__aA4Ac
+                        )}
+                      >
+                        {"Timeline"}
+                      </div>
+                    </Button>
+                  </p.PlasmicLink>
+
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__psLw8
+                    )}
+                    component={Link}
+                    href={`/clipping`}
+                    platform={"nextjs"}
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__vf6Fc
+                      )}
+                      color={"clear" as const}
+                      shape={"sharp" as const}
+                      size={"minimal" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__saLSx
                         )}
                       >
                         {"Clipping"}
@@ -931,16 +1466,15 @@ function PlasmicHome__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__cjEmq
+                      sty.link__kWdZ
                     )}
                     component={Link}
-                    href={`/blog`}
                     platform={"nextjs"}
                   >
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button__bByMt
+                        sty.button__v0Hwm
                       )}
                       color={"clear" as const}
                       shape={"sharp" as const}
@@ -950,7 +1484,39 @@ function PlasmicHome__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__sgjD8
+                          sty.text__u4YVh
+                        )}
+                      >
+                        {"Portfolio"}
+                      </div>
+                    </Button>
+                  </p.PlasmicLink>
+
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__psaJ6
+                    )}
+                    component={Link}
+                    href={"https://natalieunterstell.com/blog/" as const}
+                    platform={"nextjs"}
+                    target={"_blank" as const}
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__eDwLv
+                      )}
+                      color={"clear" as const}
+                      shape={"sharp" as const}
+                      size={"minimal" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__oqmxT
                         )}
                       >
                         {"Blog"}
@@ -962,7 +1528,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__fy1V5
+                      sty.link__bqutk
                     )}
                     component={Link}
                     href={`/contact`}
@@ -971,7 +1537,7 @@ function PlasmicHome__RenderFunc(props: {
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button__sRqBy
+                        sty.button__ml1I2
                       )}
                       color={"clear" as const}
                       shape={"sharp" as const}
@@ -981,7 +1547,7 @@ function PlasmicHome__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__fd4Yf
+                          sty.text__q4RpW
                         )}
                       >
                         {"Contact"}
@@ -994,7 +1560,7 @@ function PlasmicHome__RenderFunc(props: {
                 <React.Fragment>
                   <p.PlasmicImg
                     alt={""}
-                    className={classNames(sty.img__kJz4E)}
+                    className={classNames(sty.img__wpk0Q)}
                     displayHeight={"auto" as const}
                     displayMaxHeight={"none" as const}
                     displayMaxWidth={"none" as const}
@@ -1005,7 +1571,7 @@ function PlasmicHome__RenderFunc(props: {
                   />
 
                   <_Icon
-                    className={classNames(projectcss.all, sty.svg__bjaUx)}
+                    className={classNames(projectcss.all, sty.svg___5EDyb)}
                     role={"img"}
                   />
                 </React.Fragment>
@@ -1023,20 +1589,21 @@ const PlasmicDescendants = {
   root: [
     "root",
     "header",
-    "h1",
     "slider",
     "reveal",
-    "p",
     "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati",
     "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati3",
     "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati2",
+    "category",
+    "category2",
+    "category4",
+    "h3",
+    "embedHtml",
     "footer"
   ],
   header: ["header"],
-  h1: ["h1"],
   slider: ["slider"],
-  reveal: ["reveal", "p"],
-  p: ["p"],
+  reveal: ["reveal"],
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati:
     [
       "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati"
@@ -1049,6 +1616,11 @@ const PlasmicDescendants = {
     [
       "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati2"
     ],
+  category: ["category"],
+  category2: ["category2"],
+  category4: ["category4"],
+  h3: ["h3"],
+  embedHtml: ["embedHtml"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1057,13 +1629,16 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
-  h1: "h1";
   slider: typeof Slider;
   reveal: typeof Reveal;
-  p: "p";
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati: "p";
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati3: "p";
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati2: "p";
+  category: "div";
+  category2: "div";
+  category4: "div";
+  h3: "h3";
+  embedHtml: typeof Embed;
   footer: typeof Footer;
 };
 
@@ -1129,10 +1704,8 @@ export const PlasmicHome = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
-    h1: makeNodeComponent("h1"),
     slider: makeNodeComponent("slider"),
     reveal: makeNodeComponent("reveal"),
-    p: makeNodeComponent("p"),
     loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati:
       makeNodeComponent(
         "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati"
@@ -1145,6 +1718,11 @@ export const PlasmicHome = Object.assign(
       makeNodeComponent(
         "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati2"
       ),
+    category: makeNodeComponent("category"),
+    category2: makeNodeComponent("category2"),
+    category4: makeNodeComponent("category4"),
+    h3: makeNodeComponent("h3"),
+    embedHtml: makeNodeComponent("embedHtml"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHome

@@ -37,6 +37,8 @@ import {
 import HeaderHeroPage from "../../HeaderHeroPage"; // plasmic-import: nF2ySVLpMIh/component
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 import Button from "../../Button"; // plasmic-import: jGsW_a0TMYi/component
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
+import InitiativesCard from "../../InitiativesCard"; // plasmic-import: RpwP78mekAf/component
 import Footer from "../../Footer"; // plasmic-import: oAWDpYdN0s/component
 
 import { useScreenVariants as useScreenVariants_0Uf6PR80TuUp8 } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 0UF6pR80tuUP8/globalVariant
@@ -63,11 +65,12 @@ export const PlasmicAbout__ArgProps = new Array<ArgPropType>();
 export type PlasmicAbout__OverridesType = {
   root?: p.Flex<"div">;
   headerHeroPage?: p.Flex<typeof HeaderHeroPage>;
+  loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8?: p.Flex<"p">;
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati5?: p.Flex<"h2">;
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati6?: p.Flex<"h2">;
-  loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8?: p.Flex<"h2">;
-  h2?: p.Flex<"h2">;
+  title?: p.Flex<"h3">;
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati7?: p.Flex<"p">;
+  h4?: p.Flex<"h4">;
   footer?: p.Flex<typeof Footer>;
 };
 
@@ -264,6 +267,37 @@ function PlasmicAbout__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
+                        sty.link__fEiti
+                      )}
+                      component={Link}
+                      href={`/about`}
+                      platform={"nextjs"}
+                    >
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__ufSm
+                        )}
+                        color={"clear" as const}
+                        shape={"sharp" as const}
+                        size={"minimal" as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__viCk7
+                          )}
+                        >
+                          {"Timeline"}
+                        </div>
+                      </Button>
+                    </p.PlasmicLink>
+
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
                         sty.link__r3Vvt
                       )}
                       component={Link}
@@ -298,7 +332,7 @@ function PlasmicAbout__RenderFunc(props: {
                         sty.link__w2L1K
                       )}
                       component={Link}
-                      href={`/blog`}
+                      href={`/articles`}
                       platform={"nextjs"}
                     >
                       <Button
@@ -384,6 +418,98 @@ function PlasmicAbout__RenderFunc(props: {
             {"About"}
           </HeaderHeroPage>
 
+          <div className={classNames(projectcss.all, sty.freeBox__utncK)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__xiaNs)}
+            >
+              <div className={classNames(projectcss.all, sty.column__leszn)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__ykmIg)}
+                >
+                  {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__vtsSs)}
+                    >
+                      <h3
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h3,
+                          projectcss.__wab_text,
+                          sty.h3__rrg41
+                        )}
+                      >
+                        {"Mini"}
+                      </h3>
+
+                      <h2
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h2,
+                          projectcss.__wab_text,
+                          sty.h2__ugxP3
+                        )}
+                      >
+                        {"Bio"}
+                      </h2>
+                    </div>
+                  ) : null}
+
+                  <p
+                    data-plasmic-name={
+                      "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8"
+                    }
+                    data-plasmic-override={
+                      overrides.loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8
+                    }
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.__wab_text,
+                      sty.loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8
+                    )}
+                  >
+                    <React.Fragment>
+                      <React.Fragment>
+                        {
+                          "Natalie Unterstell is a Brazil native on a mission to build a climate-resilient and deforestation-free world. Having lived and worked in the Amazon rainforest, she has worked closely with indigenous peoples as well as policymakers, activists and business leaders.\n\nShe served as the Head of Sustainable Development for the Brazilian Presidency, the Head of the Amazonas State' Climate Change Center and as one of Brazil's negotiators at the United Nations Framework Convention on Climate Change.\n\nShe is the founder of multiple policy think tanks and advocacy groups focused on climate leadership, gender equality and environmental stewardship, and she serves as advisor to various initiatives, including the Women's League for the Ocean.\n\nIn 2018, she was selected for the largest all-female expedition to Antarctica, Homeward Bound, where she reaffirmed her commitment to advance climate action. Natalie has a Masters in Public Administration from Harvard University, and a Bachelor in Business Administration from Fundacao Getulio Vargas (FGV).\n\nHere are Natalie's photos for professional use. For example, the material is available for presentations and banners to promote events where Natalie will be present. "
+                        }
+                      </React.Fragment>
+                      {
+                        <p.PlasmicLink
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            projectcss.__wab_text,
+                            projectcss.plasmic_default__inline,
+                            sty.link__tEc7
+                          )}
+                          component={Link}
+                          href={
+                            "https://drive.google.com/drive/folders/1oJECRYWG4rWFHK8lWzoITu0Dfk1D17bl?usp=sharing" as const
+                          }
+                          platform={"nextjs"}
+                        >
+                          {"Click here"}
+                        </p.PlasmicLink>
+                      }
+                      <React.Fragment>
+                        {
+                          " to have access and download the photos in high resolution. \n"
+                        }
+                      </React.Fragment>
+                    </React.Fragment>
+                  </p>
+                </p.Stack>
+              </div>
+
+              <div className={classNames(projectcss.all, sty.column__yjsPa)} />
+            </p.Stack>
+          </div>
+
           <div className={classNames(projectcss.all, sty.freeBox__w4PR)}>
             <p.Stack
               as={"div"}
@@ -454,7 +580,7 @@ function PlasmicAbout__RenderFunc(props: {
                       sty.h3__c9Ib8
                     )}
                   >
-                    {"vision"}
+                    {"Vision"}
                   </h3>
 
                   <h2
@@ -499,28 +625,24 @@ function PlasmicAbout__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.freeBox___2VwfD)}
                 >
                   <h3
+                    data-plasmic-name={"title"}
+                    data-plasmic-override={overrides.title}
                     className={classNames(
                       projectcss.all,
                       projectcss.h3,
                       projectcss.__wab_text,
-                      sty.h3__pn3Fs
+                      sty.title
                     )}
                   >
                     {"Propose"}
                   </h3>
 
                   <h2
-                    data-plasmic-name={
-                      "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8"
-                    }
-                    data-plasmic-override={
-                      overrides.loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8
-                    }
                     className={classNames(
                       projectcss.all,
                       projectcss.h2,
                       projectcss.__wab_text,
-                      sty.loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8
+                      sty.h2__eg6BZ
                     )}
                   >
                     {"Build a climate-resilient and deforestation-free world"}
@@ -564,16 +686,14 @@ function PlasmicAbout__RenderFunc(props: {
                       </h3>
 
                       <h2
-                        data-plasmic-name={"h2"}
-                        data-plasmic-override={overrides.h2}
                         className={classNames(
                           projectcss.all,
                           projectcss.h2,
                           projectcss.__wab_text,
-                          sty.h2
+                          sty.h2__fEnN4
                         )}
                       >
-                        {"Background"}
+                        {"Interview"}
                       </h2>
                     </div>
                   ) : null}
@@ -593,7 +713,7 @@ function PlasmicAbout__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Natalie Unterstell is a Brazil native on a mission to build a climate-resilient and deforestation-free world. Having lived and worked in the Amazon rainforest, she has worked closely with indigenous peoples as well as policymakers, activists and business leaders.\n\nShe served as the Head of Sustainable Development for the Brazilian Presidency, the Head of the Amazonas State' Climate Change Center and as one of Brazil's negotiators at the United Nations Framework Convention on Climate Change.\n\nShe is the founder of multiple policy think tanks and advocacy groups focused on climate leadership, gender equality and environmental stewardship, and she serves as advisor to various initiatives, including the Women's League for the Ocean.\n\nIn 2018, she was selected for the largest all-female expedition to Antarctica, Homeward Bound, where she reaffirmed her commitment to advance climate action. Natalie has a Masters in Public Administration from Harvard University, and a Bachelor in Business Administration from Fundacao Getulio Vargas (FGV)."
+                      "Active in environmental conventions and projects, Natalie is invited for interviews by national-level broadcasters as a spokesperson for news and a leader in practical actions. "
                     }
                   </p>
                 </p.Stack>
@@ -603,16 +723,271 @@ function PlasmicAbout__RenderFunc(props: {
             </p.Stack>
           </div>
 
+          {true ? (
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__sQJx)}
+            >
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.columns__vivGy)}
+              >
+                <div className={classNames(projectcss.all, sty.column__xgax)}>
+                  <Embed
+                    className={classNames(
+                      "__wab_instance",
+                      sty.embedHtml__nRvT9
+                    )}
+                    code={
+                      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/8sz-7R45Wg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' as const
+                    }
+                  />
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column__fv9Xf)}>
+                  <Embed
+                    className={classNames(
+                      "__wab_instance",
+                      sty.embedHtml__sfNp3
+                    )}
+                    code={
+                      '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/c685bptJSHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' as const
+                    }
+                  />
+                </div>
+              </p.Stack>
+
+              {true ? (
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__vjEZt)}
+                >
+                  <h4
+                    data-plasmic-name={"h4"}
+                    data-plasmic-override={overrides.h4}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h4,
+                      projectcss.__wab_text,
+                      sty.h4
+                    )}
+                  >
+                    {
+                      "If you want to check Natalie’s personal and professional journey year by year."
+                    }
+                  </h4>
+
+                  <Button
+                    className={classNames("__wab_instance", sty.button__idaTg)}
+                    color={"sand" as const}
+                    link={`/timeline`}
+                    onClick={"" as const}
+                    shape={"sharp" as const}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ibGhP
+                      )}
+                    >
+                      {"Click Here"}
+                    </div>
+                  </Button>
+                </p.Stack>
+              ) : null}
+            </p.Stack>
+          ) : null}
+
           <p.Stack
             as={"div"}
             hasGap={true}
-            className={classNames(projectcss.all, sty.columns__vivGy)}
+            className={classNames(projectcss.all, sty.freeBox__mv9T7)}
           >
-            <div className={classNames(projectcss.all, sty.column__xgax)} />
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__ywO0I)}
+            >
+              <div className={classNames(projectcss.all, sty.column__gt3V2)}>
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__t636O)}
+                >
+                  {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__bnCxL)}
+                    >
+                      <h3
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h3,
+                          projectcss.__wab_text,
+                          sty.h3__ruk7
+                        )}
+                      >
+                        {"Natalie"}
+                      </h3>
 
-            <div className={classNames(projectcss.all, sty.column__fv9Xf)} />
+                      <h2
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h2,
+                          projectcss.__wab_text,
+                          sty.h2__tvsH3
+                        )}
+                      >
+                        {"Initiatives"}
+                      </h2>
+                    </div>
+                  ) : null}
+                </p.Stack>
+              </div>
 
-            <div className={classNames(projectcss.all, sty.column__ngCs6)} />
+              <div className={classNames(projectcss.all, sty.column__tysAu)} />
+            </p.Stack>
+
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__lRDs)}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__l7Pet)}>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__xJcF4
+                    )}
+                    component={Link}
+                    href={
+                      "https://www.climatecolab.org/contests/2016/land-use-agriculture-forestry-livestock/c/proposal/1330806" as const
+                    }
+                    platform={"nextjs"}
+                    target={"_blank" as const}
+                  >
+                    <InitiativesCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.initiativesCard__jfN0F
+                      )}
+                      sourceName={"2016"}
+                    />
+                  </p.PlasmicLink>
+
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__vrqvf
+                    )}
+                    component={Link}
+                    href={"http://www.politicaporinteiro.org" as const}
+                    platform={"nextjs"}
+                    target={"_blank" as const}
+                  >
+                    <InitiativesCard
+                      category={"Creator"}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.initiativesCard__hizqb
+                      )}
+                      excerpt={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__sBbBj
+                          )}
+                        >
+                          {
+                            "The project Política Por Inteiro was developed in 2019 to monitor political signals of relevant changes announced (risks) or carried out (acts) by the Federal Executive Branch, as well as their effects."
+                          }
+                        </div>
+                      }
+                      sourceName={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___0FEWv
+                          )}
+                        >
+                          {"2019"}
+                        </div>
+                      }
+                      title={"Política por inteiro"}
+                    />
+                  </p.PlasmicLink>
+
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__eiKbe
+                    )}
+                    component={Link}
+                    href={"https://clima2030.org/" as const}
+                    platform={"nextjs"}
+                    target={"_blank" as const}
+                  >
+                    <InitiativesCard
+                      className={classNames(
+                        "__wab_instance",
+                        sty.initiativesCard__sm4Km
+                      )}
+                      excerpt={
+                        "The Climate & Development initiative is an articulation in favor of a new national development project supported by a low-carbon economy."
+                      }
+                      sourceName={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__k4Uga
+                          )}
+                        >
+                          {"2021"}
+                        </div>
+                      }
+                      title={"Clima Desenvolvimento"}
+                    />
+                  </p.PlasmicLink>
+
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__ykBtf
+                    )}
+                    component={Link}
+                    href={
+                      "https://www.ggfutures.net/analysis/ggf2035-climate-related-conflict" as const
+                    }
+                    platform={"nextjs"}
+                    target={"_blank" as const}
+                  >
+                    <InitiativesCard
+                      category={"Fellow"}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.initiativesCard__g9O7Z
+                      )}
+                      excerpt={
+                        "The Global Governance Futures – Robert Bosch Foundation Multilateral Dialogues (GGF) program brings together exceptional young professionals to look ahead to the year 2035 and think of better ways to address global challenges. The working group on the future of climate-related conflict considers climate change a significant environmental threat and identified four key trends that pervade our scenarios for 2035."
+                      }
+                      sourceName={"2020"}
+                      title={"Global Governance Futures"}
+                    />
+                  </p.PlasmicLink>
+                </div>
+              </p.Stack>
+            ) : null}
           </p.Stack>
 
           <Footer
@@ -716,6 +1091,37 @@ function PlasmicAbout__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      sty.link__yTtj
+                    )}
+                    component={Link}
+                    href={`/timeline`}
+                    platform={"nextjs"}
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__hu8Yz
+                      )}
+                      color={"clear" as const}
+                      shape={"sharp" as const}
+                      size={"minimal" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__f1VM
+                        )}
+                      >
+                        {"Timeline"}
+                      </div>
+                    </Button>
+                  </p.PlasmicLink>
+
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
                       sty.link__qougR
                     )}
                     component={Link}
@@ -750,7 +1156,7 @@ function PlasmicAbout__RenderFunc(props: {
                       sty.link__aZmBw
                     )}
                     component={Link}
-                    href={`/blog`}
+                    href={`/articles`}
                     platform={"nextjs"}
                   >
                     <Button
@@ -836,14 +1242,19 @@ const PlasmicDescendants = {
   root: [
     "root",
     "headerHeroPage",
+    "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8",
     "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati5",
     "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati6",
-    "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8",
-    "h2",
+    "title",
     "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati7",
+    "h4",
     "footer"
   ],
   headerHeroPage: ["headerHeroPage"],
+  loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8:
+    [
+      "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8"
+    ],
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati5:
     [
       "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati5"
@@ -852,15 +1263,12 @@ const PlasmicDescendants = {
     [
       "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati6"
     ],
-  loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8:
-    [
-      "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8"
-    ],
-  h2: ["h2"],
+  title: ["title"],
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati7:
     [
       "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati7"
     ],
+  h4: ["h4"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -869,11 +1277,12 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   headerHeroPage: typeof HeaderHeroPage;
+  loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8: "p";
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati5: "h2";
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati6: "h2";
-  loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8: "h2";
-  h2: "h2";
+  title: "h3";
   loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati7: "p";
+  h4: "h4";
   footer: typeof Footer;
 };
 
@@ -939,6 +1348,10 @@ export const PlasmicAbout = Object.assign(
   {
     // Helper components rendering sub-elements
     headerHeroPage: makeNodeComponent("headerHeroPage"),
+    loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8:
+      makeNodeComponent(
+        "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8"
+      ),
     loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati5:
       makeNodeComponent(
         "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati5"
@@ -947,15 +1360,12 @@ export const PlasmicAbout = Object.assign(
       makeNodeComponent(
         "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati6"
       ),
-    loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8:
-      makeNodeComponent(
-        "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati8"
-      ),
-    h2: makeNodeComponent("h2"),
+    title: makeNodeComponent("title"),
     loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati7:
       makeNodeComponent(
         "loremIpsumBrandedContentRickardJakobssonGindeIratOledesSamafalingDibevisPenOchTrilevisDenKahanarEndotesRinadeGunAhmedGrafenEttChristerObergOgonGalararBelogiEftersomFarTorggangareFarenForYharMarknadsplatserLaxrutGanadeHaskaMobilstrumpaPredGimalPersonaliseringOmAlbinLindgrenAkeEkstromProkottaPreharPredeAgnostimodernBokstavsdrogDylingPlattfilmMicroMomentsJuloreTulertadSprakekonomiReklejmaAnEpikrati7"
       ),
+    h4: makeNodeComponent("h4"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicAbout

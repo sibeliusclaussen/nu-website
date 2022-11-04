@@ -259,7 +259,7 @@ function PlasmicHeaderHeroPage__RenderFunc(props: {
                         sty.link__xaay
                       )}
                       component={Link}
-                      href={`/blog`}
+                      href={`/articles`}
                       platform={"nextjs"}
                       target={undefined}
                     >

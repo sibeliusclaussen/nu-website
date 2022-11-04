@@ -20,6 +20,9 @@
   flex-direction: row;
   font-size: var(--token-rFqlJRJmz);
 }
+.h2unnamedVariant {
+  display: none;
+}
 .slotTargetChildren {
   color: var(--token-W97lnYcRQ131x);
 }

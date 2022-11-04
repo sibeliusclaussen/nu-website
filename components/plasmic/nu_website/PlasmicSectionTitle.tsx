@@ -42,10 +42,16 @@ import sty from "./PlasmicSectionTitle.module.css"; // plasmic-import: A5YKWg0MH
 
 import _Icon from "./icons/PlasmicIcon___"; // plasmic-import: 6Vrd0S0dtKQ/icon
 
-export type PlasmicSectionTitle__VariantMembers = {};
-export type PlasmicSectionTitle__VariantsArgs = {};
+export type PlasmicSectionTitle__VariantMembers = {
+  unnamedVariant: "unnamedVariant";
+};
+export type PlasmicSectionTitle__VariantsArgs = {
+  unnamedVariant?: SingleBooleanChoiceArg<"unnamedVariant">;
+};
 type VariantPropType = keyof PlasmicSectionTitle__VariantsArgs;
-export const PlasmicSectionTitle__VariantProps = new Array<VariantPropType>();
+export const PlasmicSectionTitle__VariantProps = new Array<VariantPropType>(
+  "unnamedVariant"
+);
 
 export type PlasmicSectionTitle__ArgsType = {
   children?: React.ReactNode;
@@ -70,6 +76,7 @@ export interface DefaultSectionTitleProps {
   children?: React.ReactNode;
   slot?: React.ReactNode;
   slot2?: React.ReactNode;
+  unnamedVariant?: SingleBooleanChoiceArg<"unnamedVariant">;
   className?: string;
 }
 
@@ -104,25 +111,54 @@ function PlasmicSectionTitle__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
-        sty.root
+        sty.root,
+        {
+          [sty.rootunnamedVariant]: hasVariant(
+            variants,
+            "unnamedVariant",
+            "unnamedVariant"
+          )
+        }
       )}
     >
       <div
         data-plasmic-name={"sectionTitle"}
         data-plasmic-override={overrides.sectionTitle}
-        className={classNames(projectcss.all, sty.sectionTitle)}
+        className={classNames(projectcss.all, sty.sectionTitle, {
+          [sty.sectionTitleunnamedVariant]: hasVariant(
+            variants,
+            "unnamedVariant",
+            "unnamedVariant"
+          )
+        })}
       >
-        <h2
-          data-plasmic-name={"h2"}
-          data-plasmic-override={overrides.h2}
-          className={classNames(projectcss.all, projectcss.h2, sty.h2)}
-        >
-          {p.renderPlasmicSlot({
-            defaultContents: "Who is",
-            value: args.children,
-            className: classNames(sty.slotTargetChildren)
-          })}
-        </h2>
+        {(
+          hasVariant(variants, "unnamedVariant", "unnamedVariant") ? true : true
+        ) ? (
+          <h2
+            data-plasmic-name={"h2"}
+            data-plasmic-override={overrides.h2}
+            className={classNames(projectcss.all, projectcss.h2, sty.h2, {
+              [sty.h2unnamedVariant]: hasVariant(
+                variants,
+                "unnamedVariant",
+                "unnamedVariant"
+              )
+            })}
+          >
+            {p.renderPlasmicSlot({
+              defaultContents: "Who is",
+              value: args.children,
+              className: classNames(sty.slotTargetChildren, {
+                [sty.slotTargetChildrenunnamedVariant]: hasVariant(
+                  variants,
+                  "unnamedVariant",
+                  "unnamedVariant"
+                )
+              })
+            })}
+          </h2>
+        ) : null}
 
         <p.Stack
           as={"div"}

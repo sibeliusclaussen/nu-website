@@ -186,7 +186,7 @@ function PlasmicForm__RenderFunc(props: {
             sty.text
           )}
         >
-          {"Button"}
+          {"SEND"}
         </div>
       </Button>
     </p.Stack>

@@ -135,7 +135,6 @@ function PlasmicHeader__RenderFunc(props: {
                 src={"https://static1.plasmic.app/close.svg" as const}
               />
             }
-            forceOpenMenu={true}
             itemsGap={32 as const}
             menuItems={
               <p.Stack
@@ -169,6 +168,24 @@ function PlasmicHeader__RenderFunc(props: {
                     )}
                   >
                     {"About"}
+                  </div>
+                </Button>
+
+                <Button
+                  className={classNames("__wab_instance", sty.button__pfNf)}
+                  color={"clear" as const}
+                  link={`/timeline`}
+                  shape={"sharp" as const}
+                  size={"minimal" as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ynkI5
+                    )}
+                  >
+                    {"Timeline"}
                   </div>
                 </Button>
 

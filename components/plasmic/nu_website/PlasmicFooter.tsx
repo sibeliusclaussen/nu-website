@@ -48,6 +48,9 @@ import NatalieUnterstellLogoIcon from "./icons/PlasmicIcon__NatalieUnterstellLog
 import _Icon from "./icons/PlasmicIcon___"; // plasmic-import: 6Vrd0S0dtKQ/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: iemRUT8B78Y/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: tfqLjeUE7Y3/icon
+import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: XVD3DQgHwQ_/icon
+import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: s6SBstulsIq/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: GPUNnXp_ix/icon
 
 export type PlasmicFooter__VariantMembers = {};
 export type PlasmicFooter__VariantsArgs = {};
@@ -361,6 +364,73 @@ function PlasmicFooter__RenderFunc(props: {
 
           value: args.children
         })}
+
+        <p.Stack
+          as={"div"}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.freeBox__wGzRs)}
+        >
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__mk1AX)}
+          >
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__vvkyS
+              )}
+              component={Link}
+              href={
+                "https://br.linkedin.com/in/unterstellnatalie?original_referer=https%3A%2F%2Fwww.google.com%2F" as const
+              }
+              platform={"nextjs"}
+              target={"_blank" as const}
+            >
+              <Icon28Icon
+                className={classNames(projectcss.all, sty.svg__dpaNo)}
+                role={"img"}
+              />
+            </p.PlasmicLink>
+
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__wt875
+              )}
+              component={Link}
+              href={
+                "https://twitter.com/unatalie?s=20&t=lOdurbUrmxEQNjIY53wFwA" as const
+              }
+              platform={"nextjs"}
+              target={"_blank" as const}
+            >
+              <Icon3Icon
+                className={classNames(projectcss.all, sty.svg__dD67)}
+                role={"img"}
+              />
+            </p.PlasmicLink>
+
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link___95QHi
+              )}
+              component={Link}
+              href={"https://www.instagram.com/unatalie/" as const}
+              platform={"nextjs"}
+              target={"_blank" as const}
+            >
+              <IconIcon
+                className={classNames(projectcss.all, sty.svg__iUpx)}
+                role={"img"}
+              />
+            </p.PlasmicLink>
+          </p.Stack>
+        </p.Stack>
       </p.Stack>
     ) : null
   ) as React.ReactElement | null;

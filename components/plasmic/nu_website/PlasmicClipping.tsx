@@ -268,6 +268,37 @@ function PlasmicClipping__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
+                        sty.link__r7B4
+                      )}
+                      component={Link}
+                      href={`/timeline`}
+                      platform={"nextjs"}
+                    >
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__wHtQw
+                        )}
+                        color={"clear" as const}
+                        shape={"sharp" as const}
+                        size={"minimal" as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___2Q9Sp
+                          )}
+                        >
+                          {"Timeline"}
+                        </div>
+                      </Button>
+                    </p.PlasmicLink>
+
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
                         sty.link__ank12
                       )}
                       component={Link}
@@ -303,7 +334,7 @@ function PlasmicClipping__RenderFunc(props: {
                         sty.link__og67M
                       )}
                       component={Link}
-                      href={`/blog`}
+                      href={`/articles`}
                       platform={"nextjs"}
                     >
                       <Button
@@ -429,6 +460,7 @@ function PlasmicClipping__RenderFunc(props: {
                 </ph.DataCtxReader>
               }
               noLayout={true}
+              table={"articles" as const}
               useDraft={false}
             >
               <ph.DataCtxReader>
@@ -658,6 +690,37 @@ function PlasmicClipping__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
+                      sty.link__xDYqH
+                    )}
+                    component={Link}
+                    href={`/timeline`}
+                    platform={"nextjs"}
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__oVjMb
+                      )}
+                      color={"clear" as const}
+                      shape={"sharp" as const}
+                      size={"minimal" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___3YBa
+                        )}
+                      >
+                        {"Timeline"}
+                      </div>
+                    </Button>
+                  </p.PlasmicLink>
+
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
                       sty.link___96HaC
                     )}
                     component={Link}
@@ -693,7 +756,7 @@ function PlasmicClipping__RenderFunc(props: {
                       sty.link__orMoO
                     )}
                     component={Link}
-                    href={`/blog`}
+                    href={`/articles`}
                     platform={"nextjs"}
                   >
                     <Button

@@ -134,6 +134,25 @@
   width: 1em;
   height: 1em;
 }
+.button__pfNf:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.svg__kBdlz {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
+.text__ynkI5 {
+  color: var(--token-favT6QS-Y);
+}
+.svg___39Wbx {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
 .button__oOf4U:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
