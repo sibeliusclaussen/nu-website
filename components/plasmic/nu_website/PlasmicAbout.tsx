@@ -270,7 +270,7 @@ function PlasmicAbout__RenderFunc(props: {
                         sty.link__fEiti
                       )}
                       component={Link}
-                      href={`/about`}
+                      href={`/timeline`}
                       platform={"nextjs"}
                     >
                       <Button

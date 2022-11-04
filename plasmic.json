@@ -800,7 +800,8 @@
           "name": "FollowWrapper",
           "componentImportPath": "@plasmicpkgs/react-twitter-widgets"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
